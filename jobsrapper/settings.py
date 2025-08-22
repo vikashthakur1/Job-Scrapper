@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'jobs',
+    'django_apscheduler'
 ]
+
+TIME_ZONE = "Asia/Kolkata" # set to your timezone
+USE_TZ = True
+# optional: nice date formatting for logs/admin
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
